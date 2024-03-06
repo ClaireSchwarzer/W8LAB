@@ -26,5 +26,12 @@ public class AppTest
         assertEquals(Integer.valueOf(1), i);//Pop should return the i
         assertTrue(stack.isEmpty());//Stack should be empty after popping the only element
     }
+    public void testIsEmpty() {
+        MyStack<Integer> stack = new MyStack<>();
+        assertTrue(stack.isEmpty());
+        stack.push(1);
+        assertFalse(stack.isEmpty());
+    }
+
 
 }

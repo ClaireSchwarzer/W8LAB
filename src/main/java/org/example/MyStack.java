@@ -19,5 +19,10 @@ public class MyStack<E> extends ArrayList<E> {
         delegate.remove(delegate.size() -1 );
         return e;
     }
+    public boolean isEmpty() {
+        return delegate.isEmpty();
+    }
+
+
 
 }
