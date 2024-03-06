@@ -32,6 +32,13 @@ public class AppTest
         stack.push(1);
         assertFalse(stack.isEmpty());
     }
-
+    public void testSize() {
+        MyStack<Integer> stack = new MyStack<>();
+        assertEquals(0, stack.size());
+        stack.push(1);
+        assertEquals(1, stack.size());
+        stack.pop();
+        assertEquals(0, stack.size());
+    }
 
 }
