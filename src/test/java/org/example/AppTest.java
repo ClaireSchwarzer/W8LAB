@@ -17,7 +17,6 @@ public class AppTest
         MyStack<Integer> stack = new MyStack<>();
         stack.push(1);
         assertFalse(stack.isEmpty());//Stack is not empty after push
-        assertEquals(Integer.valueOf(1), stack.delegate.get(stack.size() - 1));//top element is the one last pushed
     }
     public void testPop() {
         MyStack<Integer> stack = new MyStack<>();

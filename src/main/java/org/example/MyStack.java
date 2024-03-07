@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.EmptyStackException;
 
 public class MyStack<E>  {
-    public ArrayList<E> delegate;
+    private ArrayList<E> delegate;
     public MyStack() {
         this.delegate = new ArrayList<>(); // step1
 
